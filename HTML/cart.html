@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A & M | Cart</title>
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=League+Spartan:wght@300;400;500;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- start header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo" id="logo">
+          <a href="home.html"><img src="../imgs/project_logo.webp" alt="" /></a>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="admin.html"><i class="fa-regular fa-user"></i></a>
+            </li>
+            <li>
+              <a class="active" href="cart.html"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <a href="admin.html"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="menu">
+          <i class="fa-solid fa-bars"></i>
+          <div class="list">
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start landing -->
+    <div class="landing-cart">
+      <div>Cart</div>
+    </div>
+    <!-- end landing -->
+    <!-- start products-table -->
+    <div class="cart">
+      <div class="container">
+        <div class="table">
+          <table>
+            <thead>
+              <td>Image</td>
+              <td>Name</td>
+              <td>Price</td>
+              <td>Quantity</td>
+              <td>Total</td>
+              <td>Remove</td>
+            </thead>
+            <tr>
+              <td><img src="../imgs/product-3.webp" alt="" /></td>
+              <td>Striped Hoodie</td>
+              <td>&#163;<span class="price">399.00</span></td>
+              <td>
+                <div class="counter">
+                  <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                  <span class="number">1</span>
+                  <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                </div>
+              </td>
+              <td>&#163;<span class="total">399.00</span></td>
+              <td><i class="fa-solid fa-circle-xmark remove"></i></td>
+            </tr>
+            <tr>
+              <td><img src="../imgs/product-1.webp" alt="" /></td>
+              <td>Basic Coloured Hoodie</td>
+              <td>&#163;<span class="price">349.00</span></td>
+              <td>
+                <div class="counter">
+                  <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                  <span class="number">2</span>
+                  <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                </div>
+              </td>
+              <td>&#163;<span class="total">698.00</span></td>
+              <td><i class="fa-solid fa-circle-xmark remove"></i></td>
+            </tr>
+            <tr>
+              <td><img src="../imgs/t2.webp" alt="" /></td>
+              <td>Cargo Jogging Trousers</td>
+              <td>&#163;<span class="price">349.00</span></td>
+              <td>
+                <div class="counter">
+                  <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                  <span class="number">1</span>
+                  <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                </div>
+              </td>
+              <td>&#163;<span class="total">349.00</span></td>
+              <td><i class="fa-solid fa-circle-xmark remove"></i></td>
+            </tr>
+            <tfoot>
+              <td colspan="4"></td>
+              <td colspan="2">
+                <div><a href="shop.html">Back To Shop</a></div>
+              </td>
+            </tfoot>
+          </table>
+        </div>
+        <div class="totals">
+          <h3>Cart Totals</h3>
+          <div class="subtotal">
+            <span>Subtotal:</span>
+            <span>&#163;<span id="subtotal">0.00</span></span>
+          </div>
+          <div class="delivery">
+            <span>Delivery:</span>
+            <span>&#163;0.00</span>
+          </div>
+          <div class="total">
+            <span>Total:</span>
+            <span>&#163;<span id="total">0.00</span></span>
+          </div>
+          <div class="coupon">
+            <input type="text" placeholder="Coupon Code" />
+            <input type="submit" value="Apply Coupon" />
+          </div>
+          <div class="link">
+            <a href="#">Proceed To Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end products-table -->
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="content">
+          <p>Customer Service</p>
+          <p>For Suez 062-1234567</p>
+          <div class="logo">
+            <img src="../imgs/project_logo.webp" alt="" />
+          </div>
+          <p>FASHION</p>
+          <p>
+            &copy; A&M's business concept is to offer fashion and quality at the
+            best price in a sustainable way.
+            <br />
+            A&M has since it was founded in 2020 grown into one of the leading
+            fashion companies in egypt. The content of this site is
+            copyright-protected and is the property of A&M company
+          </p>
+          <p>Cairo | Suez</p>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="fa-brands fa-instagram insta"></i
+        ></a>
+        <a href="https://www.facebook.com" target="_blank"
+          ><i class="fa-brands fa-facebook-f face"></i
+        ></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><i class="fa-brands fa-twitter twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com" target="_blank"
+          ><i class="fa-brands fa-linkedin-in linked"></i
+        ></a>
+      </div>
+    </div>
+    <!-- end footer -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to update the subtotal and total
+        function updateSubtotalAndTotal() {
+          const rows = document.querySelectorAll("tbody tr");
+          let subtotal = 0;
+
+          rows.forEach((row) => {
+            const price = parseFloat(row.querySelector(".price").textContent);
+            const quantity = parseInt(row.querySelector(".number").textContent);
+            subtotal += price * quantity;
+          });
+
+          const total = subtotal;
+
+          document.getElementById("subtotal").textContent = subtotal.toFixed(2);
+          document.getElementById("total").textContent = total.toFixed(2);
+        }
+
+        // Function to update the total price of a single item
+        function updateTotal(row) {
+          const price = parseFloat(row.querySelector(".price").textContent);
+          const quantity = parseInt(row.querySelector(".number").textContent);
+          const total = row.querySelector(".total");
+          total.textContent = (price * quantity).toFixed(2);
+          updateSubtotalAndTotal();
+        }
+
+        // Function to handle the click event on plus and minus buttons
+        function updateQuantity(event) {
+          const button = event.target.closest("span");
+          const row = button.closest("tr");
+          const numberSpan = row.querySelector(".number");
+          let quantity = parseInt(numberSpan.textContent);
+
+          if (button.classList.contains("plus")) {
+            quantity++;
+          } else if (button.classList.contains("minus")) {
+            quantity = Math.max(1, quantity - 1); // Ensure quantity does not go below 1
+          }
+
+          numberSpan.textContent = quantity;
+          updateTotal(row);
+        }
+
+        // Function to handle the click event on the remove icon
+        function removeItem(event) {
+          const button = event.target.closest("i");
+          const row = button.closest("tr");
+          row.remove();
+          updateSubtotalAndTotal();
+        }
+
+        // Attach event listeners to all plus and minus buttons
+        document.querySelectorAll(".plus, .minus").forEach((button) => {
+          button.addEventListener("click", updateQuantity);
+        });
+
+        // Attach event listeners to all remove icons
+        document.querySelectorAll(".remove").forEach((button) => {
+          button.addEventListener("click", removeItem);
+        });
+
+        // Initial update of subtotal and total
+        updateSubtotalAndTotal();
+      });
+    </script>
+  </body>
+</html>
